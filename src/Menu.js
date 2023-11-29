@@ -12,7 +12,7 @@ export default function Menu() {
         />
         <p className="text-3xl sm:text-5xl mt-6 mb-4"><strong>Under Construction</strong></p>
         <div className="text-center">
-          <button className="bg-blue-600 rounded-lg py-2 px-4">
+          <button className="bg-blue-500 rounded-lg py-2 px-4 hover:bg-blue-700">
             <Link to={"/"}>
               <p className="py-1 mx-2">Take me back</p>
             </Link>

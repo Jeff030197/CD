@@ -7,6 +7,7 @@ import Feature from './Feature';
 import ImageSlider from './ImageSlider';
 import Footer from './Footer';
 import Cx from './Cx';
+import Redirect from './Redirect';
 
 function Home() {
     const navigation = [
@@ -27,6 +28,7 @@ function Home() {
     <Feature />
 	<ImageSlider />
   <Cx/>
+  <Redirect/>
 	<Footer />
     </>
   )

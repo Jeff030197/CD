@@ -49,7 +49,8 @@ function Cx() {
   }, [feedback]);
 
   return (
-    <div className="py-5 bg-neutral-900 bg-no-repeat md:bg-cover md:bg-center md:bg-Bg md:max-xl:flex">
+    <div className="py-5">
+    <div className="py-5 bg-neutral-900 bg-no-repeat md:bg-cover md:bg-center md:bg-Bg md:max-xl:flex ">
       <div className="grid grid-cols-1 sm:grid-cols-2 py-20 max-w-7xl mx-auto">
         <div className="flex justify-center items-center">
           <p className="tracking-tight text-white text-5xl md:text-7xl font-serif text-center">
@@ -78,6 +79,7 @@ function Cx() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
