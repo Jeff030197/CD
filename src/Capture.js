@@ -57,7 +57,7 @@ function Capture() {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={handleButtonClick}
           >
-            Lets Go
+            Let's Go
           </button>
           <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><Link to ={"/"}>Home</Link> </button>
           
