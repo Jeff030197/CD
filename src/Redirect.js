@@ -92,7 +92,7 @@ function Redirect() {
         </div>
       </div>
       <div className="flex justify-center py-5">
-        <button className="bg-blue-600 rounded-lg py-2 px-2 text-white font-serif hover:bg-blue-700">
+        <button className="bg-brown-700 rounded-lg py-2 px-2 text-white font-serif hover:bg-brown-500">
           <Link to={"/Special"}>Have a look</Link>
         </button>
       </div>

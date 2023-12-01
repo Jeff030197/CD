@@ -24,47 +24,15 @@ import "./Capture.css";
 import { Link } from "react-router-dom";
 
 
+
+
 function Capture() {
-  const [displayText, setDisplayText] = useState("Are you ready to see magic?");
-  const [showImages, setShowImages] = useState(false);
-  const [clickCount, setClickCount] = useState(0);
 
-  const handleButtonClick = () => {
-    setClickCount(prevCount => prevCount + 1);
-
-    if (clickCount === 1) {
-      setDisplayText("");
-      setShowImages(true);
-    } else if (displayText === "Are you ready to see magic?") {
-      setDisplayText("At Coffe Dusk, we uphold the belief that each moment deserves to be cherished.");
-    }
-  };
 
   return (
     <>
-    <div className="text-center text-4xl py-5 font-serif ">
-        {displayText}
-      </div>
 
-      
-      <div className="flex justify-center gap-5 ">
-      
-
-        {clickCount < 2 && (
-          <>
-          <button
-            id="btn"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={handleButtonClick}
-          >
-            Let's Go
-          </button>
-          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><Link to ={"/"}>Home</Link> </button>
-          
-          </>
-        )}
-        {showImages && (
-      <div class="grid grid-cols-3 gap-2 image-grid ">
+      <div class="grid grid-cols-3 gap-2 image-grid bg-neutral-900 ">
       <div class="transition hover:-translate-y-1 hover:scale-110 duration-300 fade-in-image fade-out">
         <img src={w1}/>
       </div>
@@ -130,15 +98,15 @@ function Capture() {
       </div>
       <div/>
       <div className="flex justify-center py-5 ">
-        <button className="bg-blue-500 py-2 px-2 rounded-lg hover:bg-blue-700"><Link to ={"/"}>Home</Link> </button>
+        <button className="mt-3 bg-brown-700 sm:mt-5 text-lg max-w-md md:max-w-xl md:mt-5 md:text-xl lg:mx-0 fixed bottom-8 right-8 text-white font-serif rounded-lg py-2 px-2 hover:bg-brown-500"><Link to ={"/"}>Back</Link> </button>
       </div>
     
     </div>
     
      
-        )}
+      
         
-      </div>
+   
       
 
     </>
